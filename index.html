@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Xhr file upload</title>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <form enctype="multipart/form-data" action="/upload.php" id="form1" method="post">
+        <input type="file" id="fileToUpload" name="fileToUpload" onchange="fileSelected();" />
+        <input type="button" value="Upload" onclick="uploadFile();">
+    </form>
+    <ul>
+        <li id="filename"></li>
+        <li id="filesize"></li>
+        <li id="filetype"></li>
+    </ul>
+    <div id="progressNumber"></div>
+</body>
+</html>
